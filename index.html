@@ -2,706 +2,426 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>متجر السبح والخواتم الرجالية | متجر إلكتروني احترافي</title>
-  <meta name="description" content="متجر إلكتروني احترافي لبيع المسابيح والخواتم الرجالية بتصاميم إبداعية. تسوّق بأمان وسهولة وفق أفضل المعايير الدولية." />
-  <meta name="theme-color" content="#0a0a0b" />
-  <meta property="og:title" content="متجر السبح والخواتم الرجالية" />
-  <meta property="og:description" content="تشكيلة منتقاة من المسابيح والخواتم الرجالية بتصاميم إبداعية." />
-  <meta property="og:type" content="website" />
-  <meta name="robots" content="index,follow" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='128' height='128' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230b1220'/%3E%3Ccircle cx='26' cy='30' r='10' fill='none' stroke='%23ffc857' stroke-width='4'/%3E%3Cpath d='M36 30a10 10 0 0 0 10 10' fill='none' stroke='%23ffc857' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>متجر السبح والخواتم الرجالية | تشكيلة مختارة وصور حقيقية</title>
+  <meta name="description" content="تسوّق سبَح وخواتم رجالية بصور حقيقية وجودة مضمونة. توصيل سريع، دفع آمن، وخدمة عملاء عبر واتساب." />
+  <meta name="color-scheme" content="light only" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#0b0f17;
-      --card:#0f1522;
-      --muted:#9aa4b2;
-      --text:#eaf0f7;
-      --primary:#7dd3fc;
-      --accent:#ffc857;
-      --ok:#10b981;
-      --danger:#ef4444;
-      --ring: 0 0 0 3px rgba(125,211,252,.25);
-      --shadow: 0 20px 60px rgba(0,0,0,.35);
-      --radius: 18px;
+      --bg:#f7fafc;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#475569;
+      --primary:#0ea5e9;
+      --primary-600:#0284c7;
+      --accent:#f59e0b;
+      --border:#e5e7eb;
+      --ring:0 0 0 3px rgba(14,165,233,.15);
+      --radius:18px;
+      --shadow:0 10px 30px rgba(15,23,42,.08);
     }
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
-      margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Noto Kufi Arabic", "Noto Sans Arabic", Arial, sans-serif;
-      background:
-        radial-gradient(1200px 600px at 90% -10%, #18304a 0%, transparent 60%),
-        radial-gradient(1000px 500px at -10% 110%, #1a2b3e 0%, transparent 60%),
-        linear-gradient(180deg, #0b0f17, #0b0f17);
-      color:var(--text);
-      line-height:1.7;
-      letter-spacing:.1px;
+      margin:0;background:var(--bg);color:var(--text);font-family:"Cairo",system-ui,Arial,sans-serif;line-height:1.7;
     }
     a{color:var(--primary);text-decoration:none}
     .container{max-width:1200px;margin:0 auto;padding:20px}
+    /* header */
     header{
-      position:sticky;top:0;z-index:50;
-      backdrop-filter: blur(10px);
-      background:rgba(11,15,23,.6);
-      border-bottom:1px solid rgba(255,255,255,.06);
+      position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--border);
+      backdrop-filter:saturate(1.2) blur(8px)
     }
-    .nav{
-      display:flex;align-items:center;gap:16px;justify-content:space-between;
-    }
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand .logo{
-      width:42px;height:42px;display:grid;place-items:center;border-radius:50%;
-      background: conic-gradient(from 180deg at 50% 50%, #1b2a41, #162235, #1b2a41);
-      box-shadow: 0 6px 20px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.06);
-    }
-    .brand h1{margin:0;font-size:1.1rem;font-weight:700;letter-spacing:.3px}
-    .links{display:flex;gap:14px;flex-wrap:wrap}
-    .links a{padding:8px 12px;border-radius:10px;color:var(--muted)}
-    .links a:hover{background:rgba(255,255,255,.06);color:var(--text)}
-    .search{
-      display:flex;gap:10px;flex:1;max-width:520px;margin-inline:20px
-    }
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:14px}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#e2f3ff,#fff)}
+    .brand h1{font-size:1.15rem;margin:0;font-weight:800}
+    .links{display:flex;gap:8px}
+    .links a{padding:10px 12px;border-radius:12px;color:var(--muted)}
+    .links a:hover{background:#f1f5f9;color:var(--text)}
+    .search{flex:1;max-width:520px;display:flex;gap:8px}
     .search input{
-      width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.08);
-      background:#0f1522;color:var(--text);outline:none;
+      width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--border);background:#fff;outline:none
     }
-    .search input:focus{box-shadow:var(--ring);border-color:#3aa9ff}
-    .header-cta{display:flex;align-items:center;gap:8px}
+    .search input:focus{box-shadow:var(--ring);border-color:#bae6fd}
     .icon-btn{
-      display:inline-flex;align-items:center;justify-content:center;gap:8px;
-      padding:10px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.08);
-      background:#121a2a;color:var(--text);cursor:pointer;
+      display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;border:1px solid var(--border);
+      background:#fff;color:var(--text);cursor:pointer
     }
-    .icon-btn:hover{background:#152035}
-    .cart-count{
-      background:var(--accent);color:#111;font-weight:700;border-radius:999px;padding:2px 8px;font-size:.8rem;
-    }
+    .icon-btn:hover{background:#f8fafc}
+    .cart-count{background:var(--accent);color:#111;padding:2px 8px;border-radius:999px;font-weight:800}
+    /* hero */
     .hero{
-      margin:24px 0;border-radius:var(--radius);
-      background:
-        radial-gradient(60% 160% at 100% 0%, rgba(255,200,87,.15), transparent 60%),
-        radial-gradient(60% 160% at 0% 100%, rgba(125,211,252,.12), transparent 60%),
-        linear-gradient(160deg,#0f1626,#0d1422 55%,#0b111e);
-      border:1px solid rgba(255,255,255,.08);
-      box-shadow:var(--shadow);
-      overflow:hidden;
-      position:relative;
+      margin:24px 0;border-radius:var(--radius);background:#fff;border:1px solid var(--border);box-shadow:var(--shadow);overflow:hidden
     }
-    .hero-content{padding:44px;display:grid;grid-template-columns:1.2fr .8fr;gap:20px}
-    .hero h2{margin:0 0 8px;font-size:2rem}
-    .hero p{color:var(--muted);margin:0 0 18px}
-    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 6px}
-    .badge{border:1px solid rgba(255,255,255,.1);padding:8px 10px;border-radius:999px;color:#dfe6ef;background:rgba(255,255,255,.04)}
-    .cta{display:flex;gap:10px;margin-top:6px}
-    .btn{
-      border:1px solid rgba(255,255,255,.08);
-      background: linear-gradient(180deg,#18263d,#131e32);
-      color:var(--text);padding:12px 16px;border-radius:12px;cursor:pointer;font-weight:700;
-    }
-    .btn.primary{
-      background:linear-gradient(180deg,#35b8ff,#1a89d7);
-      border-color:#69c7ff;color:#071725; box-shadow: 0 10px 30px rgba(53,184,255,.25);
-    }
-    .btn.primary:hover{filter:saturate(1.1) brightness(1.03)}
-    .hero-visual{position:relative;padding:20px}
-    .orb{
-      position:absolute;inset:auto -40px -60px auto;width:300px;height:300px;border-radius:50%;
-      background:radial-gradient(circle at 35% 35%, rgba(255,200,87,.9), rgba(255,200,87,.1) 60%, transparent 70%);
-      filter: blur(14px);opacity:.25;pointer-events:none;
-    }
-    .display{
-      background:#0f1626;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px;box-shadow: var(--shadow);
-    }
-    .display svg{width:100%;height:auto;display:block}
+    .hero-grid{display:grid;grid-template-columns:1.1fr .9fr}
+    .hero-copy{padding:34px}
+    .hero-copy h2{margin:0 0 10px;font-size:2rem}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+    .chip{border:1px solid var(--border);background:#f8fafc;color:#0f172a;border-radius:999px;padding:6px 10px;font-size:.92rem}
+    .cta{display:flex;gap:10px;margin-top:16px}
+    .btn{border:1px solid var(--border);background:#fff;color:#0f172a;padding:12px 16px;border-radius:12px;font-weight:800;cursor:pointer}
+    .btn.primary{background:linear-gradient(180deg,#38bdf8,#0ea5e9);border-color:#7dd3fc;color:#06131f}
+    .btn.primary:hover{filter:saturate(1.05) brightness(1.02)}
+    .hero-img{position:relative;min-height:280px}
+    .hero-img img{width:100%;height:100%;object-fit:cover}
+    /* toolbar */
     .toolbar{
-      display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:24px 0;
-      padding:14px;border:1px solid rgba(255,255,255,.08);border-radius:12px;background:#0f1522;
+      display:flex;gap:12px;flex-wrap:wrap;margin:16px 0;padding:12px;border:1px solid var(--border);
+      background:#fff;border-radius:12px
     }
     .toolbar select,.toolbar input{
-      padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:#0c1220;color:var(--text);
+      padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:#fff
     }
-    .grid{
-      display:grid;grid-template-columns:repeat(3, 1fr);gap:16px;
-    }
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .card{
-      background: linear-gradient(180deg,#0f1626,#0e1523);
-      border:1px solid rgba(255,255,255,.08);
-      border-radius:16px; padding:12px; box-shadow: var(--shadow);
-      display:flex;flex-direction:column;gap:10px; position:relative; overflow:hidden;
+      background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column
     }
-    .thumb{
-      height:220px;border-radius:12px;background:radial-gradient(120% 100% at 30% 40%, #253b5a, #162235);
-      display:grid;place-items:center;border:1px solid rgba(255,255,255,.06); position:relative;
-    }
-    .price{font-weight:800;color:var(--accent)}
-    .meta{display:flex;justify-content:space-between;color:var(--muted);font-size:.92rem}
-    .actions{display:flex;gap:8px;margin-top:6px}
-    .chip{font-size:.85rem;color:#c7d2e1;border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:4px 8px;background:rgba(255,255,255,.04)}
-    .ring-svg,.beads-svg{width:80%;max-width:260px}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    /* Cart drawer */
+    .thumb{aspect-ratio:4/3;background:#f8fafc;overflow:hidden}
+    .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+    .content{padding:12px}
+    .meta{display:flex;justify-content:space-between;align-items:center;color:var(--muted)}
+    .price{color:#111827;font-weight:900}
+    .actions{display:flex;gap:8px;margin-top:10px}
+    /* cart drawer */
     .cart-drawer{
-      position:fixed;top:0;bottom:0;left:0;width:380px;max-width:100%;
-      background:#0b111c;border-inline-end:1px solid rgba(255,255,255,.08);
-      transform:translateX(-100%);transition:transform .35s ease;z-index:60;display:flex;flex-direction:column;
-      box-shadow: 0 0 80px rgba(0,0,0,.5);
+      position:fixed;top:0;bottom:0;left:0;width:380px;max-width:100%;background:#fff;border-inline-end:1px solid var(--border);
+      transform:translateX(-100%);transition:transform .3s ease;z-index:60;display:flex;flex-direction:column
     }
     .cart-drawer.open{transform:translateX(0)}
-    .cart-head{display:flex;justify-content:space-between;align-items:center;padding:16px;border-bottom:1px solid rgba(255,255,255,.08)}
-    .cart-list{flex:1;overflow:auto;padding:12px 12px 0 12px;display:flex;flex-direction:column;gap:10px}
-    .cart-item{display:grid;grid-template-columns:64px 1fr auto;gap:10px;align-items:center;background:#0f1626;padding:10px;border:1px solid rgba(255,255,255,.08);border-radius:12px}
-    .cart-item img,.cart-item svg{width:64px;height:64px;border-radius:8px;border:1px solid rgba(255,255,255,.06);background:#112036}
+    .cart-head{display:flex;justify-content:space-between;align-items:center;padding:14px;border-bottom:1px solid var(--border)}
+    .cart-list{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:10px}
+    .cart-item{display:grid;grid-template-columns:64px 1fr auto;gap:10px;align-items:center;background:#fff;border:1px solid var(--border);border-radius:12px;padding:10px}
+    .cart-item img{width:64px;height:64px;object-fit:cover;border-radius:8px}
     .qty{display:flex;align-items:center;gap:6px}
-    .qty button{width:28px;height:28px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:#0c1220;color:var(--text);cursor:pointer}
-    .cart-foot{border-top:1px solid rgba(255,255,255,.08);padding:12px}
-    .totals{display:flex;justify-content:space-between;align-items:center;margin:6px 0 10px}
-    .checkout{display:flex;flex-direction:column;gap:8px}
-    .checkout input, .checkout textarea{
-      width:100%;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:#0c1220;color:var(--text);
-    }
-    .empty{color:var(--muted);text-align:center;padding:40px}
-    footer{
-      margin-top:40px;border-top:1px solid rgba(255,255,255,.08);padding:20px;color:var(--muted);
-    }
+    .qty button{width:28px;height:28px;border-radius:8px;border:1px solid var(--border);background:#fff;cursor:pointer}
+    .cart-foot{border-top:1px solid var(--border);padding:12px;background:#fff}
+    .totals{display:flex;justify-content:space-between;align-items:center}
+    footer{margin:32px 0;color:var(--muted)}
     .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px}
-    .trust{display:flex;gap:8px;flex-wrap:wrap}
-    .trust .chip{background:#0f1626}
-    /* Responsive */
+    .pill{position:fixed;inset:auto 16px 16px auto;display:flex;flex-direction:column;gap:8px}
+    .pill a{display:block;background:rgba(15,23,42,.08);color:#0f172a;padding:8px 12px;border-radius:999px;border:1px solid var(--border)}
     @media (max-width:1000px){
-      .hero-content{grid-template-columns:1fr}
-      .grid{grid-template-columns:repeat(2, 1fr)}
+      .hero-grid{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
       .links{display:none}
-      .search{max-width:100%;margin:0}
+      .search{max-width:100%}
     }
-    @media (max-width:640px){
-      .grid{grid-template-columns:1fr}
-      .hero h2{font-size:1.5rem}
-      .cart-drawer{width:100%}
-    }
+    @media (max-width:640px){ .grid{grid-template-columns:1fr} }
   </style>
 </head>
 <body>
-  <a class="sr-only" href="#store">تخطي إلى المحتوى</a>
+  <a class="sr-only" href="#catalog">تخطي إلى المحتوى</a>
 
+  <!-- ====== HEADER ====== -->
   <header>
-    <div class="container nav" role="navigation" aria-label="شريط التنقل">
+    <div class="container nav" role="navigation" aria-label="التنقل">
       <div class="brand">
-        <div class="logo" aria-hidden="true">
-          <!-- Abstract logo: ring + beads -->
-          <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
-            <circle cx="24" cy="26" r="10" fill="none" stroke="#ffc857" stroke-width="4"/>
-            <path d="M34 26a10 10 0 0 0 10 10" fill="none" stroke="#ffc857" stroke-width="4" stroke-linecap="round"/>
-            <circle cx="46" cy="20" r="3" fill="#7dd3fc"/>
-            <circle cx="52" cy="27" r="3" fill="#7dd3fc"/>
-            <circle cx="50" cy="36" r="3" fill="#7dd3fc"/>
-          </svg>
-        </div>
-        <h1 aria-label="اسم المتجر">متجر السبح والخواتم</h1>
+        <div class="logo" aria-hidden="true">🧿</div>
+        <h1>متجر السبح والخواتم</h1>
       </div>
-
-      <form class="search" role="search" aria-label="بحث عن المنتجات" onsubmit="event.preventDefault();">
-        <input id="q" type="search" placeholder="ابحث عن: سبحة، حجر عقيق، خاتم فضة…" autocomplete="off" />
+      <form class="search" role="search" onsubmit="event.preventDefault()">
+        <input id="q" type="search" placeholder="ابحث: سبحة كهرمان، خاتم فضة…" autocomplete="off" />
       </form>
-
-      <div class="header-cta">
-        <button class="icon-btn" id="openCart" aria-haspopup="dialog" aria-controls="cartDrawer">
-          <!-- cart icon -->
-          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 4h-2l-1 2v2h2l3.6 7.59l-1.35 2.45A1.993 1.993 0 0 0 10 21h9v-2h-8.42c-.14 0-.25-.11-.25-.25c0-.04.01-.08.03-.11L11.1 16h5.45c.75 0 1.41-.41 1.75-1.03L22 7H6.31l-.95-2H2V3h4z"/></svg>
-          <span>السلة</span>
-          <span class="cart-count" id="cartCount">0</span>
-        </button>
-        <a class="icon-btn" href="#contact">تواصل</a>
+      <div class="links">
+        <a href="#catalog">المنتجات</a>
+        <a href="#about">من نحن</a>
+        <a href="#contact">تواصل</a>
+        <button id="openCart" class="icon-btn">السلة <span id="cartCount" class="cart-count">0</span></button>
       </div>
     </div>
   </header>
 
-  <main id="store" class="container" role="main">
-    <section class="hero" aria-label="قسم تعريفي">
-      <div class="hero-content">
-        <div>
-          <h2>تشكيلة فاخرة من <span style="color:var(--accent)">المسابيح</span> و <span style="color:var(--primary)">الخواتم الرجالية</span></h2>
-          <p>تصاميم إبداعية بمواد مختارة بعناية (عقيق، مسابح طبيعيّة، فضة عيار 925). تجربة تسوّق آمنة وسريعة مع سياسات إرجاع واضحة وخيارات دفع مرنة.</p>
-          <div class="badges" aria-label="مزايا المتجر">
-            <span class="badge">ضمان أصالة المواد</span>
-            <span class="badge">شحن سريع وآمن</span>
-            <span class="badge">دفع آمن</span>
-            <span class="badge">استرجاع خلال 7 أيام</span>
-          </div>
-          <div class="cta">
-            <a href="#catalog" class="btn primary">استكشف المنتجات</a>
-            <a href="#about" class="btn">من نحن</a>
-          </div>
+  <!-- ====== HERO ====== -->
+  <section class="container hero" aria-label="عرض ترويجي">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h2>قطع مختارة بعناية—<span style="color:var(--primary)">صور حقيقية</span>، جودة مضمونة</h2>
+        <p style="color:var(--muted)">
+          نقدّم سبَح من أحجار طبيعية وخواتم رجالية فاخرة من الفضة 925. صور واقعية لكل قطعة، مع
+          قياسات واضحة وسياسة إرجاع سهلة. ✦ اشترِ بثقة، ووثّق ذوقك.
+        </p>
+        <div class="badges">
+          <span class="chip">دفع آمن</span>
+          <span class="chip">توصيل خلال 24–48 ساعة</span>
+          <span class="chip">استرجاع خلال 7 أيام</span>
+          <span class="chip">خدمة واتساب مباشرة</span>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="display">
-            <!-- Creative hero SVG (beads + ring gradient) -->
-            <svg viewBox="0 0 600 360" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <radialGradient id="g1" cx="30%" cy="35%" r="70%">
-                  <stop offset="0%" stop-color="#2e4a72"/>
-                  <stop offset="60%" stop-color="#17263b"/>
-                  <stop offset="100%" stop-color="#0f1626"/>
-                </radialGradient>
-                <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stop-color="#ffd98a"/>
-                  <stop offset="100%" stop-color="#e7a81c"/>
-                </linearGradient>
-                <linearGradient id="ice" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stop-color="#9be0ff"/>
-                  <stop offset="100%" stop-color="#2bbdf5"/>
-                </linearGradient>
-                <filter id="glow">
-                  <feGaussianBlur stdDeviation="6" result="b"/>
-                  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-                </filter>
-              </defs>
-              <rect width="600" height="360" fill="url(#g1)"/>
-              <!-- beads string -->
-              <g transform="translate(60,40)">
-                <path d="M0,40 C150,-40 330,140 480,80" fill="none" stroke="rgba(125,211,252,.3)" stroke-width="4" />
-                <g fill="url(#ice)">
-                  <circle cx="40" cy="40" r="16"/>
-                  <circle cx="90" cy="28" r="18"/>
-                  <circle cx="140" cy="30" r="16"/>
-                  <circle cx="190" cy="52" r="20"/>
-                  <circle cx="240" cy="74" r="18"/>
-                  <circle cx="290" cy="72" r="16"/>
-                  <circle cx="340" cy="58" r="19"/>
-                  <circle cx="390" cy="54" r="16"/>
-                  <circle cx="440" cy="62" r="18"/>
-                </g>
-              </g>
-              <!-- ring -->
-              <g transform="translate(330,140)" filter="url(#glow)">
-                <circle cx="70" cy="70" r="56" fill="none" stroke="url(#gold)" stroke-width="14"/>
-                <circle cx="70" cy="70" r="30" fill="none" stroke="#0b111c" stroke-width="10"/>
-                <circle cx="110" cy="35" r="10" fill="url(#gold)"/>
-              </g>
-            </svg>
-          </div>
-          <div class="orb"></div>
+        <div class="cta">
+          <a class="btn primary" href="#catalog">ابدأ التسوق الآن</a>
+          <a class="btn" href="#about">تعرف علينا</a>
         </div>
       </div>
-    </section>
+      <figure class="hero-img" aria-hidden="true">
+        <!-- ضع صورة حقيقية للواجهة (سبحة على خلفية فاتحة) -->
+        <img src="https://images.pexels.com/photos/6802042/pexels-photo-6802042.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="">
+      </figure>
+    </div>
+  </section>
 
-    <section class="toolbar" aria-label="أدوات التصفية">
-      <label>
-        الفئة
-        <select id="filterCategory" aria-label="فلترة حسب الفئة">
-          <option value="">الكل</option>
-          <option value="beads">مسابيح</option>
-          <option value="rings">خواتم</option>
-        </select>
-      </label>
-      <label>
-        المادة
-        <select id="filterMaterial" aria-label="فلترة حسب المادة">
-          <option value="">الكل</option>
-          <option value="agate">عقيق</option>
-          <option value="amber">كهرمان</option>
-          <option value="wood">خشب</option>
-          <option value="silver">فضة 925</option>
-          <option value="steel">ستانلس</option>
-        </select>
-      </label>
-      <label>
-        الترتيب
-        <select id="sort" aria-label="ترتيب">
-          <option value="featured">الأبرز</option>
-          <option value="price-asc">السعر: من الأقل للأعلى</option>
-          <option value="price-desc">السعر: من الأعلى للأقل</option>
-          <option value="name">الاسم</option>
-        </select>
-      </label>
-      <span role="status" aria-live="polite" id="resultsCount" class="chip">0 منتج</span>
-    </section>
+  <!-- ====== FILTER BAR ====== -->
+  <section class="container toolbar" aria-label="أدوات التصفية">
+    <label>الفئة
+      <select id="filterCategory">
+        <option value="">الكل</option>
+        <option value="beads">مسابيح</option>
+        <option value="rings">خواتم</option>
+      </select>
+    </label>
+    <label>المادة
+      <select id="filterMaterial">
+        <option value="">الكل</option>
+        <option value="agate">عقيق</option>
+        <option value="amber">كهرمان</option>
+        <option value="wood">خشب</option>
+        <option value="silver">فضة 925</option>
+        <option value="steel">ستانلس</option>
+      </select>
+    </label>
+    <label>الترتيب
+      <select id="sort">
+        <option value="featured">الأبرز</option>
+        <option value="price-asc">السعر ↑</option>
+        <option value="price-desc">السعر ↓</option>
+        <option value="name">الاسم</option>
+      </select>
+    </label>
+    <span id="resultsCount" class="chip" role="status" aria-live="polite">0 منتج</span>
+  </section>
 
-    <section id="catalog" class="grid" aria-label="قائمة المنتجات">
-      <!-- Products are defined statically with semantic data attributes -->
-      <!-- Beads 1 -->
-      <article class="card product" tabindex="0"
-        data-category="beads" data-material="agate" data-name="سبحة عقيق أزرق" data-price="29.9" data-id="B001">
-        <div class="thumb" aria-hidden="true">
-          <svg class="beads-svg" viewBox="0 0 200 120">
-            <defs>
-              <linearGradient id="b1" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#9be0ff"/><stop offset="1" stop-color="#2bbdf5"/>
-              </linearGradient>
-            </defs>
-            <path d="M10,40 C60,10 140,110 190,70" fill="none" stroke="rgba(125,211,252,.35)" stroke-width="6"/>
-            <g fill="url(#b1)">
-              <circle cx="28" cy="38" r="10"/><circle cx="52" cy="30" r="11"/><circle cx="76" cy="34" r="10"/>
-              <circle cx="100" cy="48" r="12"/><circle cx="124" cy="62" r="11"/><circle cx="148" cy="66" r="10"/>
-              <circle cx="170" cy="64" r="10"/>
-            </g>
-          </svg>
-        </div>
-        <header>
-          <h3 style="margin:4px 0 2px">سبحة عقيق أزرق</h3>
-          <div class="meta"><span class="chip">عقيق</span><span class="price">د.ب <span data-field="price">29.9</span></span></div>
-        </header>
-        <p class="desc" style="color:var(--muted);margin:0">خرز 8 مم • خيط مع شرّابة أنيقة</p>
-        <div class="actions">
-          <button class="btn add" data-add>أضف للسلة</button>
-          <button class="btn" data-view>تفاصيل</button>
-        </div>
-      </article>
-
-      <!-- Beads 2 -->
-      <article class="card product" tabindex="0"
-        data-category="beads" data-material="amber" data-name="سبحة كهرمان طبيعي" data-price="49.0" data-id="B002">
-        <div class="thumb" aria-hidden="true">
-          <svg class="beads-svg" viewBox="0 0 200 120">
-            <defs><linearGradient id="b2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd98a"/><stop offset="1" stop-color="#e7a81c"/></linearGradient></defs>
-            <path d="M10,60 C50,10 150,110 190,50" fill="none" stroke="rgba(255,200,87,.35)" stroke-width="6"/>
-            <g fill="url(#b2)">
-              <circle cx="30" cy="58" r="10"/><circle cx="55" cy="45" r="11"/><circle cx="80" cy="52" r="10"/>
-              <circle cx="105" cy="65" r="12"/><circle cx="130" cy="70" r="11"/><circle cx="155" cy="64" r="10"/>
-            </g>
-          </svg>
-        </div>
-        <header>
-          <h3 style="margin:4px 0 2px">سبحة كهرمان طبيعي</h3>
-          <div class="meta"><span class="chip">كهرمان</span><span class="price">د.ب <span data-field="price">49</span></span></div>
-        </header>
-        <p class="desc" style="color:var(--muted);margin:0">ألوان عسلية دافئة • خامة فاخرة</p>
-        <div class="actions">
-          <button class="btn add" data-add>أضف للسلة</button>
-          <button class="btn" data-view>تفاصيل</button>
-        </div>
-      </article>
-
-      <!-- Beads 3 -->
-      <article class="card product" tabindex="0"
-        data-category="beads" data-material="wood" data-name="سبحة خشب سنديان" data-price="19.5" data-id="B003">
-        <div class="thumb" aria-hidden="true">
-          <svg class="beads-svg" viewBox="0 0 200 120">
-            <defs><linearGradient id="b3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c09b6f"/><stop offset="1" stop-color="#7b5c3e"/></linearGradient></defs>
-            <path d="M10,50 C60,20 140,100 190,60" fill="none" stroke="rgba(192,155,111,.35)" stroke-width="6"/>
-            <g fill="url(#b3)">
-              <circle cx="26" cy="50" r="10"/><circle cx="52" cy="40" r="11"/><circle cx="78" cy="46" r="10"/>
-              <circle cx="104" cy="58" r="12"/><circle cx="130" cy="68" r="11"/><circle cx="156" cy="64" r="10"/>
-            </g>
-          </svg>
-        </div>
-        <header>
-          <h3 style="margin:4px 0 2px">سبحة خشب سنديان</h3>
-          <div class="meta"><span class="chip">خشب</span><span class="price">د.ب <span data-field="price">19.5</span></span></div>
-        </header>
-        <p class="desc" style="color:var(--muted);margin:0">طبيعية بلمسة عطرية • 99 حبة</p>
-        <div class="actions">
-          <button class="btn add" data-add>أضف للسلة</button>
-          <button class="btn" data-view>تفاصيل</button>
-        </div>
-      </article>
-
-      <!-- Beads 4 -->
-      <article class="card product" tabindex="0"
-        data-category="beads" data-material="agate" data-name="سبحة عقيق أسود مطفأ" data-price="24.0" data-id="B004">
-        <div class="thumb" aria-hidden="true">
-          <svg class="beads-svg" viewBox="0 0 200 120">
-            <defs><linearGradient id="b4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6b7280"/><stop offset="1" stop-color="#1f2937"/></linearGradient></defs>
-            <path d="M12,42 C60,8 140,112 188,78" fill="none" stroke="rgba(107,114,128,.35)" stroke-width="6"/>
-            <g fill="url(#b4)">
-              <circle cx="30" cy="42" r="10"/><circle cx="56" cy="30" r="11"/><circle cx="82" cy="38" r="10"/>
-              <circle cx="108" cy="58" r="12"/><circle cx="134" cy="70" r="11"/><circle cx="160" cy="74" r="10"/>
-            </g>
-          </svg>
-        </div>
-        <header>
-          <h3 style="margin:4px 0 2px">سبحة عقيق أسود مطفأ</h3>
-          <div class="meta"><span class="chip">عقيق</span><span class="price">د.ب <span data-field="price">24</span></span></div>
-        </header>
-        <p class="desc" style="color:var(--muted);margin:0">مظهر كلاسيكي راقٍ • خرز 10 مم</p>
-        <div class="actions">
-          <button class="btn add" data-add>أضف للسلة</button>
-          <button class="btn" data-view>تفاصيل</button>
-        </div>
-      </article>
-
-      <!-- Rings 1 -->
-      <article class="card product" tabindex="0"
-        data-category="rings" data-material="silver" data-name="خاتم فضة عقيق يماني" data-price="59.0" data-id="R001">
-        <div class="thumb" aria-hidden="true">
-          <svg class="ring-svg" viewBox="0 0 220 140">
-            <defs><linearGradient id="r1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd98a"/><stop offset="1" stop-color="#e7a81c"/></linearGradient></defs>
-            <circle cx="110" cy="70" r="38" fill="none" stroke="url(#r1)" stroke-width="12"/>
-            <circle cx="110" cy="70" r="18" fill="#0b111c" stroke="#1f2b3a" stroke-width="8"/>
-            <ellipse cx="140" cy="50" rx="6" ry="6" fill="url(#r1)"/>
-          </svg>
-        </div>
-        <header>
-          <h3 style="margin:4px 0 2px">خاتم فضة عقيق يماني</h3>
-          <div class="meta"><span class="chip">فضة 925</span><span class="price">د.ب <span data-field="price">59</span></span></div>
-        </header>
-        <p class="desc" style="color:var(--muted);margin:0">تصميم كلاسيكي • فص عقيق طبيعي</p>
-        <div class="actions">
-          <button class="btn add" data-add>أضف للسلة</button>
-          <button class="btn" data-view>تفاصيل</button>
-        </div>
-      </article>
-
-      <!-- Rings 2 -->
-      <article class="card product" tabindex="0"
-        data-category="rings" data-material="silver" data-name="خاتم فضة حجر أزرق" data-price="62.0" data-id="R002">
-        <div class="thumb" aria-hidden="true">
-          <svg class="ring-svg" viewBox="0 0 220 140">
-            <defs><linearGradient id="r2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9be0ff"/><stop offset="1" stop-color="#2bbdf5"/></linearGradient></defs>
-            <circle cx="110" cy="70" r="38" fill="none" stroke="url(#r2)" stroke-width="12"/>
-            <circle cx="110" cy="70" r="18" fill="#0b111c" stroke="#1f2b3a" stroke-width="8"/>
-            <ellipse cx="138" cy="52" rx="7" ry="7" fill="url(#r2)"/>
-          </svg>
-        </div>
-        <header>
-          <h3 style="margin:4px 0 2px">خاتم فضة حجر أزرق</h3>
-          <div class="meta"><span class="chip">فضة 925</span><span class="price">د.ب <span data-field="price">62</span></span></div>
-        </header>
-        <p class="desc" style="color:var(--muted);margin:0">حجر سماوي • تشطيب لامع</p>
-        <div class="actions">
-          <button class="btn add" data-add>أضف للسلة</button>
-          <button class="btn" data-view>تفاصيل</button>
-        </div>
-      </article>
-
-      <!-- Rings 3 -->
-      <article class="card product" tabindex="0"
-        data-category="rings" data-material="steel" data-name="خاتم ستانلس أسود" data-price="22.0" data-id="R003">
-        <div class="thumb" aria-hidden="true">
-          <svg class="ring-svg" viewBox="0 0 220 140">
-            <circle cx="110" cy="70" r="38" fill="none" stroke="#6b7280" stroke-width="12"/>
-            <circle cx="110" cy="70" r="18" fill="#0b111c" stroke="#1f2b3a" stroke-width="8"/>
-          </svg>
-        </div>
-        <header>
-          <h3 style="margin:4px 0 2px">خاتم ستانلس أسود</h3>
-          <div class="meta"><span class="chip">ستانلس</span><span class="price">د.ب <span data-field="price">22</span></span></div>
-        </header>
-        <p class="desc" style="color:var(--muted);margin:0">مقاوم للخدش • وزن خفيف</p>
-        <div class="actions">
-          <button class="btn add" data-add>أضف للسلة</button>
-          <button class="btn" data-view>تفاصيل</button>
-        </div>
-      </article>
-
-      <!-- Rings 4 -->
-      <article class="card product" tabindex="0"
-        data-category="rings" data-material="silver" data-name="خاتم فضة نقش عربي" data-price="68.0" data-id="R004">
-        <div class="thumb" aria-hidden="true">
-          <svg class="ring-svg" viewBox="0 0 220 140">
-            <defs><pattern id="arab" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 3h6" stroke="#2a3a52" stroke-width="1"/></pattern></defs>
-            <circle cx="110" cy="70" r="38" fill="none" stroke="url(#arab)" stroke-width="12"/>
-            <circle cx="110" cy="70" r="18" fill="#0b111c" stroke="#1f2b3a" stroke-width="8"/>
-          </svg>
-        </div>
-        <header>
-          <h3 style="margin:4px 0 2px">خاتم فضة نقش عربي</h3>
-          <div class="meta"><span class="chip">فضة 925</span><span class="price">د.ب <span data-field="price">68</span></span></div>
-        </header>
-        <p class="desc" style="color:var(--muted);margin:0">نقوش عربية أنيقة • تشطيب مطفأ</p>
-        <div class="actions">
-          <button class="btn add" data-add>أضف للسلة</button>
-          <button class="btn" data-view>تفاصيل</button>
-        </div>
-      </article>
-    </section>
-
-    <!-- Product Modal -->
-    <dialog id="productModal" style="border:none;border-radius:16px;padding:0;max-width:720px;width:92%;background:#0f1626;color:var(--text)">
-      <form method="dialog" style="display:flex;justify-content:flex-end;padding:12px">
-        <button class="icon-btn" value="cancel" aria-label="إغلاق">✕</button>
-      </form>
-      <div style="display:grid;grid-template-columns:1fr 1.1fr;gap:16px;padding:0 16px 16px 16px">
-        <div id="modalVisual" style="background:#0b111c;border:1px solid rgba(255,255,255,.08);border-radius:12px;display:grid;place-items:center;min-height:280px"></div>
-        <div>
-          <h3 id="modalTitle" style="margin:0 0 6px"></h3>
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-            <span class="chip" id="modalMaterial"></span>
-            <strong class="price">د.ب <span id="modalPrice"></span></strong>
-          </div>
-          <label>المقاس (للخواتم فقط)
-            <select id="modalSize" style="display:block;margin-top:6px;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:#0c1220;color:var(--text)">
-              <option value="">—</option>
-              <option>7</option><option>8</option><option>9</option><option>10</option><option>11</option>
-            </select>
-          </label>
-          <label style="display:block;margin-top:10px">الكمية
-            <input id="modalQty" type="number" min="1" value="1" style="display:block;margin-top:6px;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.1);background:#0c1220;color:var(--text)">
-          </label>
-          <div style="display:flex;gap:10px;margin-top:14px">
-            <button class="btn primary" id="modalAdd">أضف للسلة</button>
-            <button class="btn" value="cancel">إغلاق</button>
-          </div>
-        </div>
+  <!-- ====== CATALOG ====== -->
+  <main id="catalog" class="container grid" aria-label="قائمة المنتجات">
+    <!-- مثال سبحة كهرمان — صورة حقيقية من Pexels -->
+    <article class="card product" data-category="beads" data-material="amber" data-name="سبحة كهرمان طبيعي" data-price="49.00" data-id="B002">
+      <div class="thumb">
+        <img loading="lazy" src="https://images.pexels.com/photos/9942474/pexels-photo-9942474.jpeg?auto=compress&cs=tinysrgb&w=800" alt="سبحة كهرمان طبيعي بلون عسلي">
       </div>
-    </dialog>
+      <div class="content">
+        <h3 style="margin:0 0 6px">سبحة كهرمان طبيعي</h3>
+        <div class="meta"><span class="chip">كهرمان</span><strong class="price">د.ب <span data-field="price">49</span></strong></div>
+        <p style="margin:.3rem 0;color:var(--muted)">خرز مصقول • تدرّجات عسلية • شرّابة فاخرة</p>
+        <div class="actions"><button class="btn primary" data-add>أضف للسلة</button><button class="btn" data-view>تفاصيل</button></div>
+      </div>
+    </article>
 
-    <!-- Cart Drawer -->
-    <aside id="cartDrawer" class="cart-drawer" role="dialog" aria-label="سلة التسوق" aria-modal="true">
-      <div class="cart-head">
-        <strong>سلة التسوق</strong>
-        <button class="icon-btn" id="closeCart" aria-label="إغلاق السلة">✕</button>
+    <!-- سبحة عقيق -->
+    <article class="card product" data-category="beads" data-material="agate" data-name="سبحة عقيق أزرق" data-price="29.90" data-id="B001">
+      <div class="thumb">
+        <img loading="lazy" src="https://images.pexels.com/photos/1666905/pexels-photo-1666905.jpeg?auto=compress&cs=tinysrgb&w=800" alt="سبحة عقيق أزرق">
       </div>
-      <div id="cartList" class="cart-list" role="list"></div>
-      <div class="cart-foot">
-        <div class="totals"><span>الإجمالي</span><strong>د.ب <span id="cartTotal">0.00</span></strong></div>
-        <details class="checkout">
-          <summary class="btn">إتمام الشراء</summary>
-          <form id="checkoutForm" novalidate>
-            <input id="buyerName" name="name" placeholder="الاسم الكامل" required />
-            <input id="buyerPhone" name="phone" placeholder="رقم الهاتف" inputmode="tel" required />
-            <textarea id="buyerAddr" name="address" placeholder="العنوان للتوصيل" rows="2" required></textarea>
-            <input id="buyerNote" name="note" placeholder="ملاحظات الطلب (اختياري)" />
-            <button class="btn primary" type="submit">تأكيد الطلب عبر واتساب</button>
-            <small style="color:var(--muted)">* لا يتم الدفع الآن — سيتم تأكيد الطلب عبر واتساب.</small>
-          </form>
-        </details>
+      <div class="content">
+        <h3 style="margin:0 0 6px">سبحة عقيق أزرق</h3>
+        <div class="meta"><span class="chip">عقيق</span><strong class="price">د.ب <span data-field="price">29.9</span></strong></div>
+        <p style="margin:.3rem 0;color:var(--muted)">خرز 8 مم • لمعان أنيق • عقد متين</p>
+        <div class="actions"><button class="btn primary" data-add>أضف للسلة</button><button class="btn" data-view>تفاصيل</button></div>
       </div>
-    </aside>
+    </article>
 
-    <section id="about" style="margin-top:30px">
-      <div class="cols">
-        <div>
-          <h3>من نحن</h3>
-          <p>نقدم تجربة متجر إلكتروني بمعايير عالمية: وضوح بالأسعار، صور إبداعية، وصف دقيق، سياسات إرجاع وشحن شفافة، وحماية بيانات العملاء.</p>
-          <div class="trust" aria-label="شارات الثقة">
-            <span class="chip">سياسة خصوصية</span>
-            <span class="chip">شروط الاستخدام</span>
-            <span class="chip">حماية SSL</span>
-          </div>
-        </div>
-        <div id="contact">
-          <h3>تواصل</h3>
-          <p>واتساب: <a id="waLink" href="#" target="_blank" rel="noopener">تواصل الآن</a></p>
-          <p>بريد: <a href="mailto:support@example.com">support@example.com</a></p>
-        </div>
-        <div>
-          <h3>الشحن والإرجاع</h3>
-          <p>شحن خلال 24–48 ساعة. استرجاع خلال 7 أيام من تاريخ الاستلام (الشروط تنطبق).</p>
-        </div>
+    <!-- خاتم فضة عقيق يماني -->
+    <article class="card product" data-category="rings" data-material="silver" data-name="خاتم فضة عقيق يماني" data-price="59.00" data-id="R001">
+      <div class="thumb">
+        <img loading="lazy" src="https://images.pexels.com/photos/264822/pexels-photo-264822.jpeg?auto=compress&cs=tinysrgb&w=800" alt="خاتم فضة بفص عقيق">
       </div>
-    </section>
+      <div class="content">
+        <h3 style="margin:0 0 6px">خاتم فضة عقيق يماني</h3>
+        <div class="meta"><span class="chip">فضة 925</span><strong class="price">د.ب <span data-field="price">59</span></strong></div>
+        <p style="margin:.3rem 0;color:var(--muted)">تصميم كلاسيكي • فص عقيق طبيعي مختار</p>
+        <div class="actions"><button class="btn primary" data-add>أضف للسلة</button><button class="btn" data-view>تفاصيل</button></div>
+      </div>
+    </article>
+
+    <!-- خاتم ستانلس أسود -->
+    <article class="card product" data-category="rings" data-material="steel" data-name="خاتم ستانلس أسود" data-price="22.00" data-id="R003">
+      <div class="thumb">
+        <img loading="lazy" src="https://images.pexels.com/photos/3641056/pexels-photo-3641056.jpeg?auto=compress&cs=tinysrgb&w=800" alt="خاتم ستانلس أسود عصري">
+      </div>
+      <div class="content">
+        <h3 style="margin:0 0 6px">خاتم ستانلس أسود</h3>
+        <div class="meta"><span class="chip">ستانلس</span><strong class="price">د.ب <span data-field="price">22</span></strong></div>
+        <p style="margin:.3rem 0;color:var(--muted)">مقاوم للخدش • خفيف ومريح للاستخدام اليومي</p>
+        <div class="actions"><button class="btn primary" data-add>أضف للسلة</button><button class="btn" data-view>تفاصيل</button></div>
+      </div>
+    </article>
+
+    <!-- سبحة خشب -->
+    <article class="card product" data-category="beads" data-material="wood" data-name="سبحة خشب سنديان" data-price="19.50" data-id="B003">
+      <div class="thumb">
+        <img loading="lazy" src="https://images.pexels.com/photos/5079328/pexels-photo-5079328.jpeg?auto=compress&cs=tinysrgb&w=800" alt="سبحة خشب سنديان طبيعية">
+      </div>
+      <div class="content">
+        <h3 style="margin:0 0 6px">سبحة خشب سنديان</h3>
+        <div class="meta"><span class="chip">خشب</span><strong class="price">د.ب <span data-field="price">19.5</span></strong></div>
+        <p style="margin:.3rem 0;color:var(--muted)">رائحة طبيعية مميزة • 99 حبة • صنع يدوي</p>
+        <div class="actions"><button class="btn primary" data-add>أضف للسلة</button><button class="btn" data-view>تفاصيل</button></div>
+      </div>
+    </article>
+
+    <!-- خاتم حجر أزرق -->
+    <article class="card product" data-category="rings" data-material="silver" data-name="خاتم فضة حجر أزرق" data-price="62.00" data-id="R002">
+      <div class="thumb">
+        <img loading="lazy" src="https://images.pexels.com/photos/1457801/pexels-photo-1457801.jpeg?auto=compress&cs=tinysrgb&w=800" alt="خاتم فضة بحجر أزرق">
+      </div>
+      <div class="content">
+        <h3 style="margin:0 0 6px">خاتم فضة حجر أزرق</h3>
+        <div class="meta"><span class="chip">فضة 925</span><strong class="price">د.ب <span data-field="price">62</span></strong></div>
+        <p style="margin:.3rem 0;color:var(--muted)">لمعان لافت • فص سماوي يعكس الذوق الرفيع</p>
+        <div class="actions"><button class="btn primary" data-add>أضف للسلة</button><button class="btn" data-view>تفاصيل</button></div>
+      </div>
+    </article>
   </main>
 
+  <!-- ====== PRODUCT MODAL ====== -->
+  <dialog id="productModal" style="border:none;border-radius:16px;padding:0;max-width:720px;width:92%;background:#fff;color:#0f172a">
+    <form method="dialog" style="display:flex;justify-content:flex-end;padding:12px;border-bottom:1px solid #e5e7eb">
+      <button class="icon-btn" value="cancel" aria-label="إغلاق">✕</button>
+    </form>
+    <div style="display:grid;grid-template-columns:1fr 1.1fr;gap:16px;padding:12px">
+      <div id="modalVisual" style="border:1px solid var(--border);border-radius:12px;overflow:hidden;min-height:280px"></div>
+      <div>
+        <h3 id="modalTitle" style="margin:6px 0"></h3>
+        <div style="display:flex;gap:10px;align-items:center;margin-bottom:8px">
+          <span class="chip" id="modalMaterial"></span>
+          <strong class="price">د.ب <span id="modalPrice"></span></strong>
+        </div>
+        <label>المقاس (للخواتم فقط)
+          <select id="modalSize" style="display:block;margin-top:6px;padding:10px;border-radius:10px;border:1px solid var(--border);background:#fff">
+            <option value="">—</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option>
+          </select>
+        </label>
+        <label style="display:block;margin-top:8px">الكمية
+          <input id="modalQty" type="number" min="1" value="1" style="display:block;margin-top:6px;padding:10px;border-radius:10px;border:1px solid var(--border);background:#fff">
+        </label>
+        <div style="display:flex;gap:10px;margin-top:14px">
+          <button class="btn primary" id="modalAdd">أضف للسلة</button>
+          <button class="btn" value="cancel">إغلاق</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ====== CART ====== -->
+  <aside id="cartDrawer" class="cart-drawer" role="dialog" aria-modal="true" aria-label="سلة التسوق">
+    <div class="cart-head">
+      <strong>سلة التسوق</strong>
+      <button class="icon-btn" id="closeCart">إغلاق</button>
+    </div>
+    <div id="cartList" class="cart-list" role="list"></div>
+    <div class="cart-foot">
+      <div class="totals"><span>الإجمالي</span><strong>د.ب <span id="cartTotal">0.00</span></strong></div>
+      <details style="margin-top:8px">
+        <summary class="btn">إتمام الشراء</summary>
+        <form id="checkoutForm" style="margin-top:8px">
+          <input id="buyerName" placeholder="الاسم الكامل" required />
+          <input id="buyerPhone" placeholder="رقم الهاتف" inputmode="tel" required />
+          <input id="buyerAddr" placeholder="العنوان للتوصيل" required />
+          <input id="buyerNote" placeholder="ملاحظات (اختياري)" />
+          <button class="btn primary" type="submit">تأكيد عبر واتساب</button>
+          <small style="color:var(--muted);display:block;margin-top:6px">* لا يتم الدفع الآن — سيتم تأكيد الطلب عبر واتساب.</small>
+        </form>
+      </details>
+    </div>
+  </aside>
+
+  <!-- ====== ABOUT / CONTACT ====== -->
+  <section id="about" class="container" style="margin-top:26px">
+    <div class="cols">
+      <div>
+        <h3>من نحن</h3>
+        <p style="color:var(--muted)">
+          متجر متخصص في السبح والخواتم الرجالية. نعرض <strong>صورًا حقيقية</strong> لكل قطعة
+          ونذكر تفاصيل المادة والمقاس بوضوح. هدفنا أن تصلك القطعة كما تراها هنا—بدون مفاجآت.
+        </p>
+      </div>
+      <div id="contact">
+        <h3>تواصل</h3>
+        <p>واتساب: <a id="waLink" target="_blank" rel="noopener">تواصل الآن</a></p>
+        <p>بريد: <a href="mailto:sales@example.com">sales@example.com</a></p>
+      </div>
+      <div>
+        <h3>الشحن والإرجاع</h3>
+        <p style="color:var(--muted)">شحن خلال 24–48 ساعة. إرجاع خلال 7 أيام من الاستلام (الشروط تنطبق).</p>
+      </div>
+    </div>
+  </section>
+
   <footer class="container">
-    <small>© <span id="year"></span> متجر السبح والخواتم — جميع الحقوق محفوظة.</small>
+    <small>© <span id="year"></span> متجر السبح والخواتم — صور حقيقية، جودة موثوقة.</small>
   </footer>
 
-  <!-- Live region for announcements -->
-  <div class="sr-only" aria-live="polite" id="ariaAnnounce"></div>
-
-  <!-- JSON-LD (Organization + sample Product) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Store",
-    "name":"متجر السبح والخواتم",
-    "image":"https://example.com/logo.png",
-    "url":"https://example.com",
-    "telephone":"+97300000000",
-    "address":{"@type":"PostalAddress","addressCountry":"BH"},
-    "makesOffer":[
-      {
-        "@type":"Offer",
-        "itemOffered":{
-          "@type":"Product",
-          "name":"سبحة عقيق أزرق",
-          "category":"Beads",
-          "material":"Agate"
-        },
-        "priceCurrency":"BHD","price":"29.9","availability":"https://schema.org/InStock"
-      }
-    ]
-  }
-  </script>
-
+  <!-- ====== SCRIPTS ====== -->
   <script>
-    // ====== Helpers ======
+    // إعدادات
+    const WHATSAPP_PHONE = "97333375858"; // ← ضع رقمك بدون +
+
+    // اختصارات
     const $ = s => document.querySelector(s);
     const $$ = s => Array.from(document.querySelectorAll(s));
     const fmt = n => (Number(n)||0).toFixed(2);
-    const announce = (msg)=>{ const el=$("#ariaAnnounce"); el.textContent=""; setTimeout(()=>el.textContent=msg,10); };
 
-    // ====== Global State ======
-    const CART_KEY = "storeCartV1";
+    // حالة السلة
+    const CART_KEY="storeCartV2";
     let cart = JSON.parse(localStorage.getItem(CART_KEY) || "[]");
-    const WHATSAPP_PHONE = "97300000000"; // ← استبدلها برقمك (بدون +)
 
-    // ====== DOM Ready ======
-    document.addEventListener("DOMContentLoaded", () => {
-      // year
+    // جاهزية
+    document.addEventListener("DOMContentLoaded", ()=>{
       $("#year").textContent = new Date().getFullYear();
-      // init counts
-      updateResultsCount();
-      renderCart();
-      // events
-      $("#openCart").addEventListener("click", () => $("#cartDrawer").classList.add("open"));
-      $("#closeCart").addEventListener("click", () => $("#cartDrawer").classList.remove("open"));
+      $("#waLink").href = "https://wa.me/" + WHATSAPP_PHONE;
+      $("#openCart").onclick = ()=>$("#cartDrawer").classList.add("open");
+      $("#closeCart").onclick = ()=>$("#cartDrawer").classList.remove("open");
+
       $("#q").addEventListener("input", filterProducts);
       $("#filterCategory").addEventListener("change", filterProducts);
       $("#filterMaterial").addEventListener("change", filterProducts);
       $("#sort").addEventListener("change", sortProducts);
-      $("#waLink").href = "https://wa.me/" + WHATSAPP_PHONE;
 
-      // product buttons
-      $$(".product [data-add]").forEach(btn => btn.addEventListener("click", onAddQuick));
-      $$(".product [data-view]").forEach(btn => btn.addEventListener("click", onView));
+      // أزرار المنتجات
+      $$(".product [data-add]").forEach(b=>b.addEventListener("click", onAddQuick));
+      $$(".product [data-view]").forEach(b=>b.addEventListener("click", onView));
 
-      // close drawer with ESC
-      window.addEventListener("keydown", e => {
-        if(e.key==="Escape") $("#cartDrawer").classList.remove("open");
-      });
-
-      // checkout
-      $("#checkoutForm").addEventListener("submit", onCheckout);
+      renderCart(); updateResultsCount();
     });
 
-    // ====== Catalog functions ======
-    function products(){
-      return $$("#catalog .product");
-    }
+    // فلترة وترتيب
+    function products(){ return $$("#catalog .product"); }
     function filterProducts(){
-      const q = $("#q").value.trim().toLowerCase();
-      const cat = $("#filterCategory").value;
-      const mat = $("#filterMaterial").value;
+      const q=$("#q").value.trim().toLowerCase();
+      const c=$("#filterCategory").value, m=$("#filterMaterial").value;
       products().forEach(p=>{
-        const name = p.dataset.name.toLowerCase();
-        const okQ = !q || name.includes(q);
-        const okC = !cat || p.dataset.category===cat;
-        const okM = !mat || p.dataset.material===mat;
-        p.style.display = (okQ && okC && okM) ? "" : "none";
+        const okQ=!q || p.dataset.name.toLowerCase().includes(q);
+        const okC=!c || p.dataset.category===c;
+        const okM=!m || p.dataset.material===m;
+        p.style.display = (okQ && okC && okM)? "":"none";
       });
       updateResultsCount();
     }
     function sortProducts(){
-      const mode = $("#sort").value;
-      const grid = $("#catalog");
-      const items = products().slice().filter(p => p.style.display !== "none");
+      const mode=$("#sort").value, grid=$("#catalog");
+      const items=products().slice().filter(p=>p.style.display!=="none");
       items.sort((a,b)=>{
-        const an = a.dataset.name; const bn = b.dataset.name;
-        const ap = parseFloat(a.dataset.price); const bp = parseFloat(b.dataset.price);
-        if(mode==="name") return an.localeCompare(bn, 'ar');
-        if(mode==="price-asc") return ap - bp;
-        if(mode==="price-desc") return bp - ap;
-        return 0; // featured
+        const an=a.dataset.name, bn=b.dataset.name;
+        const ap=parseFloat(a.dataset.price), bp=parseFloat(b.dataset.price);
+        if(mode==="name") return an.localeCompare(bn,'ar');
+        if(mode==="price-asc") return ap-bp;
+        if(mode==="price-desc") return bp-ap;
+        return 0;
       });
-      items.forEach(it=>grid.appendChild(it));
+      items.forEach(el=>grid.appendChild(el));
     }
     function updateResultsCount(){
-      const visible = products().filter(p => p.style.display !== "none").length;
-      $("#resultsCount").textContent = visible + " منتج";
+      const visible=products().filter(p=>p.style.display!=="none").length;
+      $("#resultsCount").textContent=visible+" منتج";
     }
 
-    // ====== Add / View ======
+    // إضافة/عرض
     function onAddQuick(e){
       const card = e.currentTarget.closest(".product");
       addToCart({
-        id: card.dataset.id,
-        name: card.dataset.name,
-        price: parseFloat(card.dataset.price),
-        material: card.dataset.material,
-        category: card.dataset.category,
-        size: "", qty: 1
+        id:card.dataset.id, name:card.dataset.name, price:+card.dataset.price,
+        material:card.dataset.material, category:card.dataset.category, size:"", qty:1,
+        // أخذ الصورة من بطاقة المنتج
+        img: card.querySelector("img")?.src || ""
       });
       $("#cartDrawer").classList.add("open");
     }
@@ -710,149 +430,103 @@
       showModal(card);
     }
 
-    // ====== Modal ======
+    // نافذة المنتج
     function showModal(card){
-      const d = $("#productModal");
+      const d=$("#productModal");
       $("#modalTitle").textContent = card.dataset.name;
-      $("#modalMaterial").textContent = card.dataset.material === "silver" ? "فضة 925"
-        : card.dataset.material === "agate" ? "عقيق"
-        : card.dataset.material === "amber" ? "كهرمان"
-        : card.dataset.material === "wood" ? "خشب"
-        : card.dataset.material === "steel" ? "ستانلس" : card.dataset.material;
+      $("#modalMaterial").textContent = matLabel(card.dataset.material);
       $("#modalPrice").textContent = card.querySelector("[data-field=price]").textContent;
-      // copy visual
-      const vis = card.querySelector(".thumb").cloneNode(true);
-      vis.style.height = "320px";
-      $("#modalVisual").innerHTML = "";
-      $("#modalVisual").appendChild(vis);
-
-      // size visible only for rings
-      const isRing = card.dataset.category === "rings";
+      const img = card.querySelector("img").cloneNode();
+      img.style.width="100%"; img.style.height="100%"; img.style.objectFit="cover";
+      $("#modalVisual").innerHTML=""; $("#modalVisual").appendChild(img);
+      const isRing = card.dataset.category==="rings";
       $("#modalSize").parentElement.style.display = isRing ? "block" : "none";
-      $("#modalSize").value = "";
-
-      $("#modalQty").value = 1;
-
+      $("#modalSize").value="";
+      $("#modalQty").value=1;
       $("#modalAdd").onclick = ()=>{
         addToCart({
-          id: card.dataset.id,
-          name: card.dataset.name,
-          price: parseFloat(card.dataset.price),
-          material: card.dataset.material,
-          category: card.dataset.category,
-          size: $("#modalSize").value || "",
-          qty: Math.max(1, parseInt($("#modalQty").value || "1", 10))
+          id: card.dataset.id, name:card.dataset.name, price:+card.dataset.price,
+          material:card.dataset.material, category:card.dataset.category,
+          size: $("#modalSize").value || "", qty: Math.max(1, parseInt($("#modalQty").value||"1",10)),
+          img: card.querySelector("img")?.src || ""
         });
-        d.close();
-        $("#cartDrawer").classList.add("open");
+        d.close(); $("#cartDrawer").classList.add("open");
       };
-
-      if(typeof d.showModal === "function"){ d.showModal(); } else { d.setAttribute("open",""); }
+      if(typeof d.showModal==="function") d.showModal(); else d.setAttribute("open","");
     }
 
-    // ====== Cart ======
+    // السلة
     function saveCart(){ localStorage.setItem(CART_KEY, JSON.stringify(cart)); }
-    function addToCart(item){
-      const same = cart.find(x => x.id===item.id && x.size===item.size);
-      if(same){ same.qty += item.qty; }
-      else { cart.push(item); }
-      renderCart();
-      announce("تمت إضافة " + item.name + " إلى السلة");
-    }
-    function removeFromCart(idx){ cart.splice(idx,1); renderCart(); }
-    function changeQty(idx, delta){
-      cart[idx].qty = Math.max(1, cart[idx].qty + delta);
-      renderCart();
-    }
     function renderCart(){
       saveCart();
       $("#cartCount").textContent = cart.reduce((s,x)=>s+x.qty,0);
-      const list = $("#cartList");
-      list.innerHTML = "";
-      if(cart.length===0){
-        list.innerHTML = `<div class="empty">سلتك فارغة</div>`;
-        $("#cartTotal").textContent = "0.00";
-        return;
-      }
+      const list=$("#cartList"); list.innerHTML="";
+      if(cart.length===0){ list.innerHTML = `<div style="text-align:center;color:#64748b;padding:28px">سلتك فارغة</div>`; $("#cartTotal").textContent="0.00"; return; }
       let total=0;
-      cart.forEach((item, i)=>{
-        total += item.price * item.qty;
-        const li = document.createElement("div");
-        li.className = "cart-item";
-        li.innerHTML = `
-          <div aria-hidden="true">${thumbSVG(item)}</div>
+      cart.forEach((it,i)=>{
+        total += it.price * it.qty;
+        const row=document.createElement("div"); row.className="cart-item";
+        row.innerHTML = `
+          <img alt="" src="${it.img||'https://images.pexels.com/photos/9942474/pexels-photo-9942474.jpeg?auto=compress&cs=tinysrgb&w=300'}">
           <div>
-            <div style="display:flex;justify-content:space-between;gap:8px">
-              <strong>${item.name}</strong>
-              <span>د.ب ${fmt(item.price)}</span>
-            </div>
-            <div style="color:var(--muted);font-size:.9rem">
-              <span>${matLabel(item.material)}</span>
-              ${item.size ? ` • مقاس ${item.size}` : ""}
-            </div>
+            <div style="display:flex;justify-content:space-between;gap:8px"><strong>${it.name}</strong><span>د.ب ${fmt(it.price)}</span></div>
+            <div style="color:#64748b;font-size:.9rem">${matLabel(it.material)}${it.size?` • مقاس ${it.size}`:""}</div>
             <div class="qty" style="margin-top:6px">
-              <button aria-label="نقص الكمية">−</button>
-              <span>${item.qty}</span>
-              <button aria-label="زيادة الكمية">+</button>
-              <button class="icon-btn" style="margin-inline-start:auto" aria-label="حذف">حذف</button>
+              <button aria-label="نقص">−</button><span>${it.qty}</span><button aria-label="زيادة">+</button>
+              <button class="icon-btn" style="margin-inline-start:auto">حذف</button>
             </div>
           </div>
-          <div><strong>د.ب ${fmt(item.price*item.qty)}</strong></div>
-        `;
-        const [minus, , plus, del] = li.querySelectorAll(".qty button");
-        minus.addEventListener("click", ()=>changeQty(i,-1));
-        plus.addEventListener("click", ()=>changeQty(i,1));
-        del.addEventListener("click", ()=>removeFromCart(i));
-        list.appendChild(li);
+          <div><strong>د.ب ${fmt(it.price*it.qty)}</strong></div>`;
+        const [minus,,plus,del]=row.querySelectorAll(".qty button, .icon-btn");
+        minus.onclick=()=>{ changeQty(i,-1); };
+        plus.onclick=()=>{ changeQty(i,1); };
+        del.onclick=()=>{ removeFromCart(i); };
+        list.appendChild(row);
       });
-      $("#cartTotal").textContent = fmt(total);
+      $("#cartTotal").textContent=fmt(total);
     }
-    function thumbSVG(item){
-      if(item.category==="rings"){
-        return `<svg width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="18" fill="none" stroke="#7dd3fc" stroke-width="5"/><circle cx="32" cy="32" r="9" fill="#0b111c" stroke="#1f2b3a" stroke-width="5"/></svg>`;
-      }else{
-        return `<svg width="64" height="64" viewBox="0 0 64 64"><path d="M6,24 C22,6 42,54 58,30" fill="none" stroke="#ffc857" stroke-width="4"/><circle cx="12" cy="24" r="4" fill="#ffc857"/><circle cx="22" cy="20" r="4" fill="#ffc857"/><circle cx="32" cy="28" r="4" fill="#ffc857"/></svg>`;
-      }
+    function addToCart(item){
+      const same = cart.find(x=>x.id===item.id && x.size===item.size);
+      if(same){ same.qty += item.qty; } else { cart.push(item); }
+      renderCart();
     }
-    function matLabel(m){
-      return m==="silver"?"فضة 925":m==="agate"?"عقيق":m==="amber"?"كهرمان":m==="wood"?"خشب":m==="steel"?"ستانلس":m;
-    }
+    function changeQty(i,d){ cart[i].qty=Math.max(1,cart[i].qty+d); renderCart(); }
+    function removeFromCart(i){ cart.splice(i,1); renderCart(); }
+    function matLabel(m){ return m==="silver"?"فضة 925":m==="agate"?"عقيق":m==="amber"?"كهرمان":m==="wood"?"خشب":m==="steel"?"ستانلس":m; }
 
-    // ====== Checkout via WhatsApp ======
-    function onCheckout(e){
+    // واتساب
+    document.getElementById("checkoutForm")?.addEventListener("submit", (e)=>{
       e.preventDefault();
-      if(cart.length===0){ alert("سلتك فارغة"); return; }
-      const name = $("#buyerName").value.trim();
-      const phone = $("#buyerPhone").value.trim();
-      const addr = $("#buyerAddr").value.trim();
-      const note = $("#buyerNote").value.trim();
-      if(!name || !phone || !addr){ alert("يرجى تعبئة البيانات المطلوبة."); return; }
-      const lines = cart.map(x=>`• ${x.name}${x.size?` (مقاس ${x.size})`:""} × ${x.qty} = د.ب ${fmt(x.price*x.qty)}`);
-      const total = fmt(cart.reduce((s,x)=>s+x.price*x.qty,0));
-      const msg =
-        `طلب جديد من ${name}%0A` +
-        `هاتف العميل: ${encodeURIComponent(phone)}%0A` +
-        `العنوان: ${encodeURIComponent(addr)}%0A` +
-        (note?`ملاحظة: ${encodeURIComponent(note)}%0A`:"") +
-        `--------------------%0A` +
-        lines.join("%0A") + `%0Aالإجمالي: د.ب ${total}%0A` +
-        `رابط المتجر: ${encodeURIComponent(location.href)}`;
-      const url = `https://wa.me/${WHATSAPP_PHONE}?text=${msg}`;
-      window.open(url, "_blank", "noopener");
-      announce("تم إنشاء رسالة واتساب بالطلب");
-    }
+      if(cart.length===0){ alert("السلة فارغة"); return; }
+      const name=$("#buyerName").value.trim(), phone=$("#buyerPhone").value.trim(), addr=$("#buyerAddr").value.trim(), note=$("#buyerNote").value.trim();
+      if(!name||!phone||!addr){ alert("يرجى تعبئة البيانات المطلوبة."); return; }
+      const lines=cart.map(x=>`• ${x.name}${x.size?` (مقاس ${x.size})`:""} × ${x.qty} = ${fmt(x.price*x.qty)} د.ب`);
+      const total=fmt(cart.reduce((s,x)=>s+x.price*x.qty,0));
+      const msg=`طلب جديد من ${name}%0Aهاتف: ${encodeURIComponent(phone)}%0Aالعنوان: ${encodeURIComponent(addr)}%0A${note?`ملاحظة: ${encodeURIComponent(note)}%0A`:""}-----------------%0A${lines.join("%0A")}%0Aالإجمالي: ${total} د.ب`;
+      window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${msg}`,"_blank","noopener");
+    });
 
-    // ====== Progressive enhancement for <dialog> close on backdrop ======
+    // إغلاق النافذة بالنقر خارجها
     (function(){
-      const dlg = document.getElementById("productModal");
+      const dlg=document.getElementById("productModal");
       if(!dlg) return;
-      dlg.addEventListener("click", (e)=>{
-        const rect = dlg.getBoundingClientRect();
-        const inDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height
-                        && rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
-        if(!inDialog) dlg.close();
+      dlg.addEventListener("click",(e)=>{
+        const r=dlg.getBoundingClientRect();
+        const inside = r.top<=e.clientY && e.clientY<=r.bottom && r.left<=e.clientX && e.clientX<=r.right;
+        if(!inside) dlg.close();
       });
     })();
   </script>
+
+  <!-- JSON-LD البسيط -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Store","name":"متجر السبح والخواتم","url":"https://example.com","telephone":"+97333375858","image":"https://images.pexels.com/photos/9942474/pexels-photo-9942474.jpeg","address":{"@type":"PostalAddress","addressCountry":"BH"}}
+  </script>
+
+  <!-- أزرار مساعدة عائمة (اختياري) -->
+  <div class="pill" aria-hidden="true">
+    <a href="#about">من نحن</a>
+    <a href="#catalog">المنتجات</a>
+  </div>
 </body>
 </html>
